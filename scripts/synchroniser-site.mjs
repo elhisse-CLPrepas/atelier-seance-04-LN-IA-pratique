@@ -1,0 +1,12 @@
+import fs from'node:fs';import path from'node:path';import{fileURLToPath}from'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),src=path.join(root,'mon-dossier-challenge-100j'),pub=path.join(root,'mini-site-seance-04/public');
+const blocked=new Set(['travail-personnel','prive','node_modules','.git']);
+const walk=(dir)=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>blocked.has(e.name)||e.name.startsWith('.env')||e.name.startsWith('~$')?[]:e.isDirectory()?walk(path.join(dir,e.name)):e.isFile()?[path.join(dir,e.name)]:[]);
+const files=walk(src);for(const f of files){const out=path.join(pub,'dossier',path.relative(src,f));fs.mkdirSync(path.dirname(out),{recursive:true});fs.copyFileSync(f,out)}
+for(const n of ['guide-séance-04-document-candidat.docx','guide-séance-04-atelier-formateur.docx'])fs.copyFileSync(path.join(root,'documents',n),path.join(pub,'ressources',n));
+// Portable ZIP with stored entries and UTF-8 names, no extra dependency.
+const crcTable=Array.from({length:256},(_,n)=>{let c=n;for(let k=0;k<8;k++)c=(c&1)?0xedb88320^(c>>>1):c>>>1;return c>>>0});
+const crc=b=>{let c=0xffffffff;for(const x of b)c=crcTable[(c^x)&255]^(c>>>8);return(c^0xffffffff)>>>0};
+let offset=0;const local=[],central=[];for(const f of files){const name=Buffer.from('mon-dossier-challenge-100j/'+path.relative(src,f).split(path.sep).join('/'));const b=fs.readFileSync(f),sum=crc(b);const h=Buffer.alloc(30);h.writeUInt32LE(0x04034b50);h.writeUInt16LE(20,4);h.writeUInt16LE(0x800,6);h.writeUInt16LE(33,12);h.writeUInt32LE(sum,14);h.writeUInt32LE(b.length,18);h.writeUInt32LE(b.length,22);h.writeUInt16LE(name.length,26);local.push(h,name,b);const c=Buffer.alloc(46);c.writeUInt32LE(0x02014b50);c.writeUInt16LE(20,4);c.writeUInt16LE(20,6);c.writeUInt16LE(0x800,8);c.writeUInt16LE(33,14);c.writeUInt32LE(sum,16);c.writeUInt32LE(b.length,20);c.writeUInt32LE(b.length,24);c.writeUInt16LE(name.length,28);c.writeUInt32LE(offset,42);central.push(c,name);offset+=h.length+name.length+b.length}
+const cen=Buffer.concat(central),end=Buffer.alloc(22);end.writeUInt32LE(0x06054b50);end.writeUInt16LE(files.length,8);end.writeUInt16LE(files.length,10);end.writeUInt32LE(cen.length,12);end.writeUInt32LE(offset,16);
+fs.writeFileSync(path.join(pub,'ressources/mon-dossier-challenge-100j-nadia-rempli.zip'),Buffer.concat([...local,cen,end]));console.log(`${files.length} fichiers fictifs et deux guides synchronisés. Les travaux réels restent hors de ces dossiers.`);

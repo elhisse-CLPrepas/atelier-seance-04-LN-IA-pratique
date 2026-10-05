@@ -1,0 +1,8 @@
+node_modules/
+dist/
+travail-personnel/
+prive/
+.env
+.env.*
+~$*
+.DS_Store

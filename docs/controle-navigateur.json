@@ -1,0 +1,16 @@
+{
+  "testedAt": "2026-10-05T00:46:21.968Z",
+  "browser": "153.0.8010.0",
+  "routes": 7,
+  "slides": 15,
+  "demoSteps": 6,
+  "promptCopies": 9,
+  "exports": 5,
+  "saveRestoreClear": true,
+  "mobileWidth": 390,
+  "localHtmlFiles": 6,
+  "subpath": "/atelier-pratique/",
+  "consoleErrors": [],
+  "failedRequests": [],
+  "remotePublicationTested": false
+}

@@ -1,0 +1,10 @@
+import fs from'node:fs';import path from'node:path';import assert from'node:assert/strict';
+const data=JSON.parse(fs.readFileSync('src/data.json'));assert.equal(data.prompts.length,9);assert.equal(data.slides.length,15);assert.equal(data.schedule.reduce((s,r)=>s+Number(r[1]),0),100);assert.ok(data.demoPrompt.includes('Madame Nadia'));
+for(const file of ['assets/logo-LN-IA.png','ressources/guide-séance-04-document-candidat.docx','ressources/guide-séance-04-atelier-formateur.docx','ressources/mon-dossier-challenge-100j-nadia-rempli.zip','dossier/04-portfolio-preuves/trace-technique.json'])assert.ok(fs.statSync('public/'+file).size>10,file);
+const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);let n=0;
+for(const file of walk('public').filter(f=>f.endsWith('.html'))){const html=fs.readFileSync(file,'utf8');for(const m of html.matchAll(/(?:href|src)="([^"#][^"]*)"/g)){const href=m[1];if(/^(https?:|mailto:|data:)/.test(href))continue;const target=path.resolve(path.dirname(file),decodeURIComponent(href.split('#')[0]));assert.ok(fs.existsSync(target),file+' → '+href);n++}}
+const decoder=new TextDecoder('utf-8',{fatal:true});let encoded=0;
+const suspicious=new RegExp('['+String.fromCharCode(0x00c3,0x00c2,0xfffd)+']');
+for(const file of walk('public').filter(f=>/\.(md|csv|html|json)$/.test(f))){const bytes=fs.readFileSync(file),text=decoder.decode(bytes);assert.ok(!suspicious.test(text),'Encodage suspect : '+file);if(/\.(md|csv)$/.test(file)){assert.ok(bytes.subarray(0,3).equals(Buffer.from([0xef,0xbb,0xbf])),'UTF-8 explicite manquant : '+file);encoded++;}}
+const source=fs.readFileSync('src/main.js','utf8');for(const m of source.matchAll(/link\('([^']+)'/g)){assert.ok(fs.existsSync(path.join('public/dossier',m[1])),m[1]);n++}
+assert.ok(!/Samira/.test(source));console.log(`Contrôles réussis : 15 écrans, 9 prompts, 100 minutes, ${n} liens locaux, ${encoded} fichiers avec UTF-8 explicite et téléchargements essentiels.`);

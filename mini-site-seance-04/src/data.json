@@ -1,0 +1,276 @@
+{
+  "prompts": [
+    {
+      "title": "Cadrer mon premier essai",
+      "text": "Tu es mon assistant de cadrage LN-IA.\nMon objectif : [objectif]. Mon public : [public].\nUsage choisi dans ma carte IA : [usage].\nPremier livrable envisagé : [type, longueur et nom du fichier].\nInformations confirmées et autorisées : [entrées].\nInformations manquantes : [manques]. Contraintes : [contraintes].\nAide-moi à limiter cet essai au temps de l’atelier.\nPropose les rubriques et trois critères de contrôle observables.\nN’invente aucune donnée ; laisse les manques « à confirmer ».\nSi un manque bloque la production, pose au plus trois questions.\nJe choisis le cadrage final."
+    },
+    {
+      "title": "Rédiger mon engagement personnel",
+      "text": "Tu es mon assistant pédagogique LN-IA.\nMon objectif : [objectif]. Mon public : [public].\nMon premier livrable et son fichier : [livrable et fichier].\nMon échéance choisie : [date ou à confirmer].\nMon rythme réaliste : [fréquence et durée].\nLe contrôle que je prévois : [critère et méthode].\nLes preuves à conserver : [fichiers et trace].\nRédige à la première personne quatre rubriques :\nMon engagement, Ma responsabilité, Mes preuves, Ma régularité.\nPréserve mes choix ; n’invente ni disponibilité ni signature.\nDistingue les actions prévues des actions déjà réalisées.\nNe promets aucun résultat garanti. Je relis et j’approuve le texte."
+    },
+    {
+      "title": "Relire mon brouillon d’engagement",
+      "text": "Tu es mon assistant de relecture.\nMes choix confirmés : [objectif, public, livrable, rythme, échéance].\nMon brouillon d’engagement : [texte].\nVérifie les quatre rubriques : engagement, responsabilité,\npreuves et régularité. Repère une promesse excessive,\nune disponibilité inventée ou un contrôle déclaré avant action.\nPropose une version améliorée sans changer mon intention.\nIndique les modifications et les points que je dois vérifier.\nNe crée ni signature ni statut de validation pédagogique."
+    },
+    {
+      "title": "Produire mon premier brouillon",
+      "text": "Tu es mon assistant de production.\nBesoin : [besoin]. Public : [public].\nLivrable : [type, longueur et nom du fichier].\nInformations confirmées et autorisées : [entrées].\nRubriques attendues : [rubriques]. Contraintes : [contraintes].\nRédige une première version en français simple.\nN’ajoute ni prix, durée, chiffre, témoignage ou certification\nqui ne figure pas dans les entrées. N’annonce aucun résultat garanti.\nSépare les informations manquantes du texte proposé.\nStatut : brouillon à relire. Ne publie et n’envoie rien.\nJe conserve le prompt effectivement envoyé et la réponse obtenue."
+    },
+    {
+      "title": "Contrôler et corriger mon livrable",
+      "text": "Voici mon cadrage et mes critères : [cadrage].\nVoici mes seules informations confirmées : [entrées].\nVoici mon brouillon réel : [texte].\nRepère les ajouts non fondés, incohérences et données inutiles.\nPrésente un tableau : passage initial, problème,\ncorrection proposée, vérification humaine à effectuer.\nPropose une version corrigée sans ajouter de fait.\nSi aucun fait erroné n’est repéré, propose une amélioration\nconcrète de clarté et explique-la, sans inventer une erreur.\nJe contrôle les propositions, choisis la correction et la documente.\nNe déclare pas mon document validé à ma place."
+    },
+    {
+      "title": "Organiser mes preuves du module 01",
+      "text": "Tu es mon assistant d’organisation des preuves.\nFichiers réellement produits : [noms et emplacements].\nContrôles réellement effectués et dates : [observations].\nRetour du binôme réellement reçu : [retour ou à organiser].\nAide-moi à compléter preuves-module-01.md.\nDistingue : à produire, à compléter, présente à relire,\nprête pour relecture. N’affirme pas avoir ouvert un fichier\nauquel tu n’as pas accès et ne coche aucune preuve manquante.\nIdentifie quatre pièces : prompt utilisé, livrable corrigé,\npreuve datée du contrôle et engagement personnel.\nClasse aussi le brouillon et le journal de correction.\nMentionne seulement l’état de la fiche privée, sans ses données.\nLe formateur décide du statut pédagogique après relecture."
+    },
+    {
+      "title": "Préparer un extrait partageable",
+      "text": "Tu es mon assistant de relecture d’un extrait anonymisé.\nBesoin du partage : [question précise pour le binôme].\nExtrait déjà anonymisé ou description sans donnée sensible : [texte].\nNe me demande pas de transmettre des coordonnées, une signature,\nun identifiant nominatif ou des informations privées de tiers.\nSignale les éléments inutiles à retirer et propose un extrait limité\nà la question de relecture. N’invente aucune autorisation.\nJe vérifie une dernière fois le contenu avant de le partager.\nLa fiche d’identification reste privée, remise séparément au formateur."
+    },
+    {
+      "title": "Classer mon dossier personnel",
+      "text": "Tu es mon assistant de classement.\nFichiers réellement présents : [noms non sensibles].\nOrganisation existante : [description].\nPropose un classement simple pour le cadrage, l’engagement,\nla production, le contrôle et les preuves, avec un espace privé séparé.\nGarde les noms existants s’ils sont clairs ; ne supprime rien.\nDistingue le brouillon de la version corrigée.\nSignale les fichiers manquants sans les déclarer créés.\nTermine par une action pour enregistrer puis rouvrir le livrable.\nLes fichiers privés restent hors site public et dépôt GitHub."
+    },
+    {
+      "title": "Préparer ma question pour le module 02",
+      "text": "Tu es mon assistant pédagogique LN-IA.\nMon objectif : [objectif]. Prompt réellement utilisé : [prompt].\nRésultat obtenu : [extrait autorisé].\nÉcart avec mon besoin : [observation].\nContrôle réalisé : [contrôle]. Points manquants : [manques].\nPropose une amélioration du contexte, de la tâche, des contraintes,\ndu format et des critères de réussite de mon prompt.\nExplique chaque modification, propose une question au formateur\net une prochaine action réaliste. Ne déclare pas mon module validé.\nN’invente ni programme détaillé, ni date, ni horaire de séance."
+    }
+  ],
+  "demoPrompt": "Tu es mon assistant de rédaction. Travaille sur le cas fictif Madame Nadia.\nRédige une fiche de 150 à 220 mots hors titres pour Cap sur ma semaine.\nPublic : indépendants qui débutent leur activité.\nBesoin : choisir trois priorités et construire un planning hebdomadaire réaliste.\nEntrées autorisées : atelier en ligne de 90 minutes pour six personnes ; trois priorités ; créneaux réalistes ; marge pour un imprévu ; une action pour le lendemain.\nRubriques : Mon besoin, Mes trois priorités, Mes créneaux, Ma marge, Mon prochain pas.\nLe prix et la prochaine date ne sont pas définis. N’ajoute ni chiffre de résultat, ni garantie, ni certification, ni témoignage, ni inscription.\nEnregistre le brouillon dans un nouveau dossier de travail. Ne remplace pas les références.\nN’annonce aucune relecture humaine déjà réalisée. Je contrôlerai le texte avant de retenir une version.",
+  "draft": "# Fiche de planning version 1\nBrouillon volontairement erroné préparé pour l’exercice. Pas une sortie historique attribuée à un outil.\n\n## Mon besoin\nJe prépare ma semaine pour mon activité indépendante.\n## Mes trois priorités\nJe choisis sept priorités et je m’engage à toutes les terminer.\n## Mes créneaux\nJe remplis tous mes créneaux disponibles pour doubler mes revenus en une semaine.\n## Ma marge\nAucune marge n’est nécessaire si je respecte mon planning.\n## Mon prochain pas\nJe commence demain. L’inscription à l’atelier coûte 500 DH.\n",
+  "final": "# Ma fiche de planning pour la semaine\n\nSimulation pédagogique — Madame Nadia — Cap sur ma semaine.\n\n## Mon besoin\n\nJe prépare une semaine de travail adaptée à mon activité indépendante. Je commence par noter mes contraintes, mes rendez-vous déjà fixés et le temps dont je dispose. Je garde seulement les informations utiles à ma propre organisation.\n\n## Mes trois priorités\n\nJe choisis trois résultats concrets au maximum. Pour chacun, je précise une première action et un signe observable de réalisation. Si une priorité paraît trop large, je réduis son périmètre avant de la placer dans mon agenda.\n\n## Mes créneaux\n\nJe réserve un créneau réaliste pour chaque action. Je distingue le temps de production du temps de relecture. Je compare ensuite le total prévu à mes disponibilités et je déplace ce qui ne tient pas.\n\n## Ma marge\n\nJe laisse une marge pour un imprévu. Si une information manque, je prépare les éléments disponibles et je note la question à résoudre. Mon planning peut évoluer sans que je déclare une tâche inachevée terminée.\n\n## Mon prochain pas\n\nJe choisis une action pour demain, son créneau et la trace à conserver. En fin de semaine, je relis mes résultats et j’ajuste mes estimations. Aucun gain de revenu n’est garanti par cet exercice.\n",
+  "corrections": [
+    [
+      "Sept priorités",
+      "Le cas demande trois priorités",
+      "Trois résultats concrets au maximum"
+    ],
+    [
+      "Doubler mes revenus",
+      "Garantie absente des données",
+      "Retirer la promesse de revenu"
+    ],
+    [
+      "Aucune marge",
+      "Contradiction avec le besoin",
+      "Réserver une marge pour un imprévu"
+    ],
+    [
+      "500 DH",
+      "Prix non défini",
+      "Retirer le prix et laisser les modalités à confirmer"
+    ],
+    [
+      "Texte trop court",
+      "Le cadrage demande 150 à 220 mots",
+      "Développer les consignes avec les seules entrées autorisées"
+    ]
+  ],
+  "engagement": "# Phrase d’engagement personnel\nMadame Nadia — NA-SIM — Simulation pédagogique rédigée le 05 octobre 2026.\nStatut : exemple rempli, aucune approbation ni signature réelle.\n\n## Mon engagement\nJe choisis de préparer une fiche de planning pour les indépendants qui débutent leur activité. Elle s’intègre au guide Cap sur ma semaine. Je vise une version de 150 à 220 mots avec trois priorités, des créneaux, une marge et une action pour demain. Dans ce scénario, mon échéance cible est le 05 octobre 2026.\n\n## Ma responsabilité\nJe compare la production au brief et au JSON. Je retire les garanties et les modalités non fournies. Je choisis les corrections, conserve leurs raisons et décide de l’extrait partageable. Les prix et la prochaine date restent à confirmer.\n\n## Mes preuves\nJe conserve le prompt, le brouillon, fiche-planning-v2.md et journal-production-correction.md. La trace technique de préparation du pack est séparée de ma réouverture personnelle. Je renseignerai mon contrôle réel après avoir exécuté mon propre essai. Le retour du binôme réel reste à organiser.\n\n## Ma régularité\nLe scénario prévoit 30 minutes par jour, quatre jours par semaine. Ma prochaine action consiste à exécuter le prompt sur une copie de travail puis à comparer la réponse aux données du cas. Si je manque de temps, je termine la fiche courte avant de développer le guide complet.\n",
+  "schedule": [
+    [
+      "00–10",
+      "10",
+      "Choisir l’essai",
+      "Cadrage et critère de contrôle"
+    ],
+    [
+      "10–25",
+      "15",
+      "Formaliser l’engagement",
+      "Quatre rubriques et rythme choisi"
+    ],
+    [
+      "25–55",
+      "30",
+      "Produire",
+      "10 min de démonstration puis 20 min de pratique"
+    ],
+    [
+      "55–75",
+      "20",
+      "Contrôler et corriger",
+      "Brouillon, version corrigée et motif"
+    ],
+    [
+      "75–90",
+      "15",
+      "Relire à deux",
+      "Extrait, retour et décision"
+    ],
+    [
+      "90–100",
+      "10",
+      "Classer les preuves",
+      "Quatre pièces et question pour la suite"
+    ]
+  ],
+  "slides": [
+    {
+      "tag": "OUVERTURE",
+      "title": "Aujourd’hui, vous terminez un premier essai",
+      "sub": "100 minutes de pratique guidée",
+      "items": [
+        "Un prompt conservé.",
+        "Une version corrigée.",
+        "Un engagement et une preuve datée."
+      ],
+      "notes": "Afficher le dossier préparé comme référence. Demander aux candidats de produire sur une copie personnelle."
+    },
+    {
+      "tag": "00–10 MIN",
+      "title": "Retrouvez votre point de départ",
+      "sub": "Séances 01, 02 et 03",
+      "items": [
+        "Votre activité et votre difficulté.",
+        "Votre objectif et vos trois livrables.",
+        "Votre carte IA avec risques et contrôles."
+      ],
+      "notes": "Ouvrir les trois fichiers de cadrage. Un document manquant peut être complété en version courte sans prétendre qu’il existait déjà."
+    },
+    {
+      "tag": "00–10 MIN",
+      "title": "Choisissez un fichier limité",
+      "sub": "Que pourra faire son lecteur ?",
+      "items": [
+        "Un besoin précis et un public.",
+        "Les seules informations autorisées.",
+        "Un format et un contrôle observable."
+      ],
+      "notes": "Dans le cas Nadia : fiche de 150 à 220 mots, cinq rubriques, trois priorités et une marge."
+    },
+    {
+      "tag": "10–25 MIN",
+      "title": "Écrivez un engagement tenable",
+      "sub": "Quatre rubriques du modèle V3",
+      "items": [
+        "Mon engagement : livrable et échéance.",
+        "Ma responsabilité : contrôle et partage.",
+        "Mes preuves et ma régularité."
+      ],
+      "notes": "Faire choisir le rythme par la personne. Nadia a 30 minutes quatre jours par semaine dans le cas fictif."
+    },
+    {
+      "tag": "25–35 MIN · DÉMONSTRATION",
+      "title": "Un même cas, trois productions",
+      "sub": "Madame Nadia · Cap sur ma semaine",
+      "items": [
+        "Guide pour pratiquer.",
+        "Page pour présenter.",
+        "Rapport pour analyser des données fictives."
+      ],
+      "notes": "Distinguer les 90 minutes de l’atelier fictif et les 100 minutes de séance LN-IA. Les trois productions complètes sont déjà préparées pour montrer la cohérence."
+    },
+    {
+      "tag": "DÉMONSTRATION · 1 MIN",
+      "title": "Lisez les entrées avant le prompt",
+      "sub": "Trois priorités, créneaux, marge, prochaine action",
+      "items": [
+        "Public : indépendants débutants.",
+        "Aucun prix ni prochaine date fournis.",
+        "Aucun résultat financier garanti."
+      ],
+      "notes": "Ouvrir Démonstration, étape 1. Montrer le JSON et le cadrage."
+    },
+    {
+      "tag": "DÉMONSTRATION · 2 MIN",
+      "title": "Une consigne qui limite le résultat",
+      "sub": "Le prompt n’est pas une commande du terminal",
+      "items": [
+        "150 à 220 mots hors titres.",
+        "Cinq rubriques définies.",
+        "Ne rien ajouter aux données autorisées."
+      ],
+      "notes": "Copier la consigne dans Codex si un essai direct est souhaité. Le scénario préparé reste un exemple, pas sa transcription."
+    },
+    {
+      "tag": "DÉMONSTRATION · 2 MIN",
+      "title": "Repérez les écarts du brouillon",
+      "sub": "Comparez chaque phrase au cadrage",
+      "items": [
+        "Sept priorités au lieu de trois.",
+        "Un prix et un gain de revenu inventés.",
+        "Aucune marge et une longueur insuffisante."
+      ],
+      "notes": "Laisser les participants expliquer au moins un écart avant de montrer le tableau des corrections."
+    },
+    {
+      "tag": "DÉMONSTRATION · 3 MIN",
+      "title": "Une correction doit avoir une raison",
+      "sub": "Vous décidez de la version retenue",
+      "items": [
+        "Revenir aux trois priorités.",
+        "Retirer les garanties et le prix.",
+        "Ajouter une marge et préciser les gestes."
+      ],
+      "notes": "Ouvrir le livrable corrigé. Montrer les 178 mots du corps de la fiche et les cinq rubriques."
+    },
+    {
+      "tag": "DÉMONSTRATION · 2 MIN",
+      "title": "Enregistrez puis rouvrez",
+      "sub": "Une preuve décrit une action observée",
+      "items": [
+        "Le nom et le chemin du fichier.",
+        "La date réelle du contrôle.",
+        "Une observation et un point restant."
+      ],
+      "notes": "Distinguer trace technique de préparation et réouverture personnelle par un candidat."
+    },
+    {
+      "tag": "35–55 MIN",
+      "title": "À vous de produire",
+      "sub": "20 minutes pour votre premier brouillon",
+      "items": [
+        "Personnalisez le prompt 4.",
+        "Exécutez dans votre assistant.",
+        "Conservez la consigne et la vraie réponse."
+      ],
+      "notes": "Ne pas exiger les trois livrables complets. Sans IA, travailler le brouillon préparé et garder l’exécution à compléter."
+    },
+    {
+      "tag": "55–75 MIN",
+      "title": "Contrôlez et corrigez",
+      "sub": "Le prompt 5 peut aider votre relecture",
+      "items": [
+        "Affirmation, donnée de départ, comparaison.",
+        "Passage initial et passage retenu.",
+        "Une raison que vous pouvez expliquer."
+      ],
+      "notes": "Si aucune erreur factuelle n’est présente, améliorer la clarté sans inventer une erreur."
+    },
+    {
+      "tag": "75–90 MIN",
+      "title": "Demandez un retour précis",
+      "sub": "Partagez seulement un extrait autorisé",
+      "items": [
+        "Qu’est-ce qui manque pour comprendre ?",
+        "Quel retour avez-vous reçu ?",
+        "Quelle modification retenez-vous ?"
+      ],
+      "notes": "Former les binômes. Ne pas copier le retour fictif comme preuve réelle."
+    },
+    {
+      "tag": "90–100 MIN",
+      "title": "Retrouvez vos quatre pièces",
+      "sub": "Préparez la remise au formateur",
+      "items": [
+        "Prompt et livrable corrigé.",
+        "Preuve datée et engagement.",
+        "Brouillon et journal restent accessibles."
+      ],
+      "notes": "Ouvrir le portfolio. La fiche nominative réelle reste séparée du dossier partageable."
+    },
+    {
+      "tag": "CLÔTURE",
+      "title": "Expliquez votre prochaine action",
+      "sub": "Le module 02 partira de votre essai",
+      "items": [
+        "Apportez le prompt et le résultat.",
+        "Nommez un écart avec votre besoin.",
+        "Posez une question sur votre consigne."
+      ],
+      "notes": "Le formateur examine les pièces avant de décider. Ne pas annoncer de date ni horaire non confirmé pour le module 02."
+    }
+  ]
+}

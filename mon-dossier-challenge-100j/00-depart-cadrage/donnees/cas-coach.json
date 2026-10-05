@@ -1,0 +1,59 @@
+{
+  "statut": "SIMULATION PÉDAGOGIQUE — identité, activité et données fictives",
+  "date_atelier": "2026-09-28",
+  "identite": {
+    "civilite": "Madame",
+    "prenom": "Nadia",
+    "activite": "Coach en organisation pour indépendants",
+    "ville": "Marrakech",
+    "email_id": "nadia@example.invalid",
+    "niveau_numerique": "Débutante dans VS Code",
+    "disponibilite": "30 minutes par jour, quatre jours par semaine"
+  },
+  "projet": {
+    "titre": "Cap sur ma semaine",
+    "public": "Indépendants qui débutent leur activité",
+    "besoin": "Choisir trois priorités et construire un planning hebdomadaire réaliste",
+    "promesse": "Repartir avec trois priorités, un planning simple et une action pour le lendemain",
+    "format": "Atelier en ligne de 90 minutes",
+    "capacite": 6,
+    "prix": "Non défini dans la simulation",
+    "cta": "Voir le programme",
+    "livrables": [
+      "Guide pratique : Cap sur ma semaine",
+      "Landing page : Cap sur ma semaine",
+      "Rapport de formation : Cap sur ma semaine"
+    ],
+    "programme": [
+      {
+        "minutes": 10,
+        "sequence": "Accueil et besoin de la semaine"
+      },
+      {
+        "minutes": 20,
+        "sequence": "Choisir trois priorités"
+      },
+      {
+        "minutes": 25,
+        "sequence": "Construire un planning réaliste"
+      },
+      {
+        "minutes": 20,
+        "sequence": "Prévoir les imprévus et ajuster"
+      },
+      {
+        "minutes": 15,
+        "sequence": "Décider une action et faire le bilan"
+      }
+    ]
+  },
+  "session_fictive": {
+    "date": "2026-09-28",
+    "inscrits": 6,
+    "presents": 6,
+    "collecte": "Jeu de données inventé pour apprendre à calculer et rédiger un rapport",
+    "echelle_auto_evaluation": "1 = je ne sais pas encore planifier ma semaine ; 5 = je peux le faire seul",
+    "echelle_satisfaction": "1 = peu satisfait ; 5 = très satisfait",
+    "critere_plan": "Trois priorités, créneaux et une marge pour un imprévu"
+  }
+}

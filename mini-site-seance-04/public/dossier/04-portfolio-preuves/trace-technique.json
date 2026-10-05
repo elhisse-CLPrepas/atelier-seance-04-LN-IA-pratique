@@ -1,0 +1,93 @@
+{
+  "date_reelle_utc": "2026-10-05T13:12:24.605Z",
+  "nature": "Contrôle technique réel des fichiers du modèle fictif. Aucun acte humain candidat attesté.",
+  "fichiers_lus": [
+    {
+      "file": "README.md",
+      "bytes": 2181,
+      "sha256": "de0e119d947ee9c99ddd17374d162b60dff29de805171f6da600870db22b1bb2"
+    },
+    {
+      "file": "00-depart-cadrage/fiche-depart-candidat.md",
+      "bytes": 1929,
+      "sha256": "ca9318c7218e92de56a840bef3796c6f843f325062274081fe7812782efb41c9"
+    },
+    {
+      "file": "00-depart-cadrage/objectif-personnel-challenge.md",
+      "bytes": 2309,
+      "sha256": "b91cbf05220d0dcc833c5dde225621104363f107af7aa372dcfe53d4291b2ed6"
+    },
+    {
+      "file": "00-depart-cadrage/carte-usages-ia-personnelle.md",
+      "bytes": 1006,
+      "sha256": "2e3d0b7b9694092243f848a7c75f3713b0c60eb38dc717dcea77a94fef4f5286"
+    },
+    {
+      "file": "00-depart-cadrage/phrase-engagement-personnel.md",
+      "bytes": 1424,
+      "sha256": "61bbdcbf7c22b6a8e795443b6eb5489b35d1477bb62afbe91827acdbaf76c68c"
+    },
+    {
+      "file": "01-prompts/premier-prompt-utilise.md",
+      "bytes": 1227,
+      "sha256": "8c8c2d6621b7478aae6a690b882ca1ac6423fa34882c9096317b93614efd4df7"
+    },
+    {
+      "file": "02-production-controle/fiche-planning-v1.md",
+      "bytes": 569,
+      "sha256": "5f9dc4cec876b9ab166f1272981c23503e8ffe1ac73e4959aa2344c23db55fad"
+    },
+    {
+      "file": "02-production-controle/journal-production-correction.md",
+      "bytes": 1071,
+      "sha256": "9ebe692d75b8e53f0c6116ae1df89847480dec10fd80aec904601bf04ae554c3"
+    },
+    {
+      "file": "03-livrables/guide/fiche-planning-v2.md",
+      "bytes": 1316,
+      "sha256": "72463c185db621f3408a6d42b2371c84c31a3a39ac070aa5cf7296bb612ed3ae"
+    },
+    {
+      "file": "03-livrables/guide/guide-cap-sur-ma-semaine.md",
+      "bytes": 7427,
+      "sha256": "ed4c987d879038cc702ebde5ea717767c4ed75a472933bf6ac0a02a82c2e97cf"
+    },
+    {
+      "file": "03-livrables/landing-page/index.html",
+      "bytes": 7908,
+      "sha256": "6f9fd5963fd8eea5143ba7604703180be73bd409a1ed9ca0b26eb547e247916f"
+    },
+    {
+      "file": "03-livrables/rapport/rapport-formation-cap-sur-ma-semaine.md",
+      "bytes": 4827,
+      "sha256": "eea2b0402f10b558e70b5508ff7444160db9a93eb167465a6d68d4d12b51cc46"
+    },
+    {
+      "file": "04-portfolio-preuves/portfolio.md",
+      "bytes": 1326,
+      "sha256": "b4221ddba5dc2595ef6454ddc2076730ad76481464b1ad2a5f1584d840221e18"
+    },
+    {
+      "file": "04-portfolio-preuves/preuves-module-01.md",
+      "bytes": 2096,
+      "sha256": "e6cf1a26401e06299cbe846662826d43fd4eb17dfa22898fc6dae9e75670c97c"
+    }
+  ],
+  "calculs": {
+    "effectif": 6,
+    "sommes": [
+      12,
+      22,
+      26
+    ],
+    "moyenne_avant": 2,
+    "moyenne_apres": 3.6666666666666665,
+    "satisfaction": 4.333333333333333,
+    "ecart_moyen": 1.6666666666666667,
+    "plans_complets": 5,
+    "taux_plans_complets": 83.33333333333333
+  },
+  "mots_fiche": 178,
+  "validation_pedagogique": "Non attribuée",
+  "relecture_candidat": "À réaliser"
+}
