@@ -14,6 +14,11 @@ npm run dev -- --port 5174
 Ouvrir http://localhost:5174. Le port 5173 est réservé au site de l’atelier séance 04. Node 24 LTS recommandé ; compatibilité minimale indiquée dans package.json.
 4. Copier PROMPT-PILOTAGE-CODEX.md dans Codex si vous souhaitez poursuivre la production. Un prompt va dans Codex, pas dans le terminal.
 
+## Accès à distance
+Le mini-site est publié sur GitHub Pages : [https://elhisse-clprepas.github.io/atelier-seance-04-LN-IA-pratique/](https://elhisse-clprepas.github.io/atelier-seance-04-LN-IA-pratique/).
+Dépôt : [atelier-seance-04-LN-IA-pratique](https://github.com/elhisse-CLPrepas/atelier-seance-04-LN-IA-pratique).
+Les saisies du carnet restent dans le navigateur de chaque utilisateur ; les travaux personnels ne sont pas publiés.
+
 ## Ce que contient le pack
 - mini-site-seance-04 : site Vite avec sept vues, quinze écrans, démonstration, carnet exportable et neuf prompts V3.
 - mon-dossier-challenge-100j : cas Nadia rempli, séances 01 à 04, trois livrables, versions, preuves et portfolio.

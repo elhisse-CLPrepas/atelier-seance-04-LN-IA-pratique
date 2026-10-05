@@ -9,4 +9,9 @@ Le dépôt doit contenir la racine de ce pack, y compris mini-site-seance-04 et 
 6. Copier l’URL réellement affichée par GitHub. Tester les vues, le logo, les Word, le ZIP dossier et ses pages HTML.
 
 La configuration base './' et les routes hash permettent un hébergement sous un nom de dépôt. Le site n’a pas de serveur ni d’API IA. Ne pas ouvrir l’index source Vite par double-clic ; lancer npm run dev ou utiliser la version déployée.
-Le pack prépare la publication mais aucune publication distante n’est attestée par la compilation locale.
+La compilation locale ne publie rien. La publication distante désormais effectuée est indiquée ci-dessous.
+
+## Publication du 05 octobre 2026
+Dépôt public : [atelier-seance-04-LN-IA-pratique](https://github.com/elhisse-CLPrepas/atelier-seance-04-LN-IA-pratique).
+Site : [ouvrir le mini-site](https://elhisse-clprepas.github.io/atelier-seance-04-LN-IA-pratique/).
+GitHub Pages utilise GitHub Actions. La publication a été autorisée dans cette session. Le dépôt de l’autre atelier séance 04 est préservé. `travail-personnel`, les dépendances et les secrets sont exclus.
